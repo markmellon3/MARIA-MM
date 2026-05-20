@@ -1,0 +1,63 @@
+{
+  "name": "MARIA-MM",
+  "version": "3.3.0",
+  "description": "Advanced WhatsApp Bot - MARIA MM",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts",
+    "dev": "tsx watch index.ts",
+    "build": "echo 'No build step needed - using tsx'"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "maria-mm",
+    "ai",
+    "downloader",
+    "games"
+  ],
+  "author": "Mark",
+  "license": "MIT",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@libsql/client": "^0.17.2",
+    "adm-zip": "^0.5.17",
+    "awesome-phonenumber": "^7.8.0",
+    "axios": "^1.14.0",
+   "@whiskeysockets/baileys": "^6.6.0",
+    "canvas": "^3.2.3",
+    "chart.js": "^4.5.1",
+    "chartjs-node-canvas": "^5.0.0",
+    "cheerio": "^1.2.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "file-type": "^16.5.4",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.5",
+    "glob": "^10.5.0",
+    "image-size": "^1.2.1",
+    "jimp": "^1.6.1",
+    "jsqr": "^1.4.0",
+    "moment": "^2.30.1",
+    "ms": "^2.1.3",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^2.7.0",
+    "node-webpmux": "^3.2.1",
+    "pino": "^8.21.0",
+    "qrcode-terminal": "^0.12.0",
+    "qs": "^6.15.0",
+    "ruhend-scraper": "^8.0.3",
+    "sharp": "^0.34.5",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "unzipper": "^0.12.3",
+    "uuid": "^9.0.1",
+    "wa-sticker-formatter": "^4.4.4",
+    "yt-search": "^2.13.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
