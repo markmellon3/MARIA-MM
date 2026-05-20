@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARIA BOT • WhatsApp Pairing Code Generator</title>
+  <meta name="description" content="Link your WhatsApp account to MARIA BOT securely with pairing code. Fast, free, and encrypted.">
+  <meta name="keywords" content="WhatsApp bot, pairing code, MARIA BOT, WhatsApp link">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧿</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- External CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== ANIMATED BACKGROUND ==================== -->
+  <div class="bg-animation">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon"></span>
+        <span class="logo-text">ARIA<span class="highlight">BOT</span></span>
+      </div>
+      
+      <div class="nav-links">
+        <a href="#generator" class="nav-link active">
+          <i class="fas fa-key"></i> Generate Code
+        </a>
+        <a href="#guide" class="nav-link">
+          <i class="fas fa-book"></i> Guide
+        </a>
+        <a href="#features" class="nav-link">
+          <i class="fas fa-star"></i> Features
+        </a>
+        <a href="#faq" class="nav-link">
+          <i class="fas fa-question-circle"></i> FAQ
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="main-content">
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="generator" class="hero-section">
+      <div class="container">
+        
+        <!-- Status Banner -->
+        <div class="status-banner online">
+          <div class="status-indicator"></div>
+          <span class="status-text">System Online • All Services Operational</span>
+          <span class="uptime">Uptime: 99.9%</span>
+        </div>
+
+        <!-- Main Card -->
+        <div class="main-card">
+          
+          <!-- Header -->
+          <div class="card-header">
+            <div class="logo-container">
+              <div class="logo-glow"></div>
+            </div>
+            <h1 class="main-title">
+              <span class="gradient-text">ARIA BOT</span>
+            </h1>
+            <p class="subtitle">WhatsApp Pairing Code Generator</p>
+            
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+              <div class="badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>256-bit Encryption</span>
+              </div>
+              <div class="badge">
+                <i class="fas fa-lock"></i>
+                <span>No Data Stored</span>
+              </div>
+              <div class="badge">
+                <i class="fas fa-bolt"></i>
+                <span>Instant Generation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Steps -->
+          <div class="progress-steps">
+            <div class="step active" data-step="1">
+              <div class="step-number">1</div>
+              <span>Enter Number</span>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step" data-step="2">
+              <div class="step-number">2</div>
+              <span>Get Code</span>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step" data-step="3">
+              <div class="step-number">3</div>
+              <span>Link Device</span>
+            </div>
+          </div>
+
+          <!-- Input Form -->
+          <form class="pairing-form" onsubmit="event.preventDefault(); generateCode();">
+            <div class="input-wrapper">
+              <label for="number" class="input-label">
+                <i class="fas fa-mobile-alt"></i>
+                Phone Number (with country code)
+              </label>
+              
+              <div class="input-group">
+                <div class="country-selector">
+                  <select id="countryCode" onchange="updatePlaceholder()">
+                   <option value="+256" selected>🇺🇬 +256 Uganda</option>
+<option value="+1">🇺🇸 +1 USA</option>
+<option value="+44">🇬🇧 +44 UK</option>
+<option value="+91">🇮🇳 +91 India</option>
+<option value="+86">🇨🇳 +86 China</option>
+<option value="+81">🇯🇵 +81 Japan</option>
+<option value="+82">🇰🇷 +82 South Korea</option>
+<option value="+61">🇦🇺 +61 Australia</option>
+<option value="+49">🇩🇪 +49 Germany</option>
+<option value="+33">🇫🇷 +33 France</option>
+</optgroup>
+
+<optgroup label="🌍 Africa">
+  <option value="+254">🇰🇪 +254 Kenya</option>
+  <option value="+255">🇹🇿 +255 Tanzania</option>
+  <option value="+27">🇿🇦 +27 South Africa</option>
+  <option value="+234">🇳🇬 +234 Nigeria</option>
+  <option value="+20">🇪🇬 +20 Egypt</option>
+  <option value="+213">🇩🇿 +213 Algeria</option>
+  <option value="+249">🇸🇩 +249 Sudan</option>
+  <option value="+250">🇷🇼 +250 Rwanda</option>
+  <option value="+211">🇸🇸 +211 South Sudan</option>
+  <option value="+266">🇱🇸 +266 Lesotho</option>
+  <option value="+260">🇿🇲 +260 Zambia</option>
+  <option value="+263">🇿🇼 +263 Zimbabwe</option>
+  <option value="+264">🇳🇦 +264 Namibia</option>
+  <option value="+265">🇲🇼 +265 Malawi</option>
+  <option value="+267">🇧🇼 +267 Botswana</option>
+  <option value="+268">🇸🇿 +268 Eswatini</option>
+  <option value="+230">🇲🇺 +230 Mauritius</option>
+  <option value="+231">🇱🇷 +231 Liberia</option>
+  <option value="+233">🇬🇭 +233 Ghana</option>
+  <option value="+235">🇹🇩 +235 Chad</option>
+  <option value="+236">🇨🇫 +236 CAR</option>
+  <option value="+237">🇨🇲 +237 Cameroon</option>
+  <option value="+241">🇬🇦 +241 Gabon</option>
+  <option value="+242">🇨🇬 +242 Congo</option>
+  <option value="+243">🇨🇩 +243 DRC</option>
+  <option value="+244">🇦🇴 +244 Angola</option>
+  <option value="+245">🇬🇼 +245 Guinea-Bissau</option>
+  <option value="+252">🇸🇴 +252 Somalia</option>
+  <option value="+253">🇩🇯 +253 Djibouti</option>
+  <option value="+257">🇧🇮 +257 Burundi</option>
+  <option value="+258">🇲🇿 +258 Mozambique</option>
+  <option value="+297">🇦🇼 +297 Aruba</option>
+</optgroup>
+
+<optgroup label="🌏 Asia & Middle East">
+  <option value="+92">🇵🇰 +92 Pakistan</option>
+  <option value="+93">🇦🇫 +93 Afghanistan</option>
+  <option value="+94">🇱🇰 +94 Sri Lanka</option>
+  <option value="+95">🇲🇲 +95 Myanmar</option>
+  <option value="+880">🇧🇩 +880 Bangladesh</option>
+  <option value="+960">🇲🇻 +960 Maldives</option>
+  <option value="#961">🇱🇧 +961 Lebanon</option>
+  <option value="+962">🇯🇴 +962 Jordan</option>
+  <option value="+964">🇮🇶 +964 Iraq</option>
+  <option value="+965">🇰🇼 +965 Kuwait</option>
+  <option value="+966">🇸🇦 +966 Saudi Arabia</option>
+  <option value="+967">🇾🇪 +967 Yemen</option>
+  <option value="+968">🇴🇲 +968 Oman</option>
+  <option value="+971">🇦🇪 +971 UAE</option>
+  <option value="+972">🇮🇱 +972 Israel</option>
+  <option value="+973">🇧🇭 +973 Bahrain</option>
+  <option value="+974">🇶🇦 +974 Qatar</option>
+  <option value="+975">🇧🇹 +975 Bhutan</option>
+  <option value="+976">🇲🇳 +976 Mongolia</option>
+  <option value="+977">🇳🇵 +977 Nepal</option>
+  <option value="+850">🇰🇵 +850 North Korea</option>
+  <option value="+852">🇭🇰 +852 Hong Kong</option>
+  <option value="+853">🇲🇴 +853 Macau</option>
+  <option value="+855">🇰🇭 +855 Cambodia</option>
+  <option value="+856">🇱🇦 +856 Laos</option>
+  <option value="+886">🇹🇼 +886 Taiwan</option>
+  <option value="+992">🇹🇯 +992 Tajikistan</option>
+  <option value="+993">🇹🇲 +993 Turkmenistan</option>
+  <option value="+994">🇦🇿 +994 Azerbaijan</option>
+  <option value="+995">🇬🇪 +995 Georgia</option>
+  <option value="+996">🇰🇬 +996 Kyrgyzstan</option>
+  <option value="+998">🇺🇿 +998 Uzbekistan</option>
+</optgroup>
+
+<optgroup label="🌎 Europe">
+  <option value="+359">🇧🇬 +359 Bulgaria</option>
+  <option value="+358">🇫🇮 +358 Finland</option>
+  <option value="+357">🇨🇾 +357 Cyprus</option>
+  <option value="+356">🇲🇹 +356 Malta</option>
+  <option value="+355">🇦🇱 +355 Albania</option>
+  <option value="+353">🇮🇪 +353 Ireland</option>
+  <option value="+352">🇱🇺 +352 Luxembourg</option>
+  <option value="+351">🇵🇹 +351 Portugal</option>
+  <option value="+30">🇬🇷 +30 Greece</option>
+  <option value="+31">🇳🇱 +31 Netherlands</option>
+  <option value="+32">🇧🇪 +32 Belgium</option>
+  <option value="+39">🇮🇹 +39 Italy</option>
+  <option value="+40">🇷🇴 +40 Romania</option>
+  <option value="+41">🇨🇭 +41 Switzerland</option>
+  <option value="+43">🇦🇹 +43 Austria</option>
+  <option value="+45">🇩🇰 +45 Denmark</option>
+  <option value="+46">🇸🇪 +46 Sweden</option>
+  <option value="+47">🇳🇴 +47 Norway</option>
+  <option value="+48">🇵🇱 +48 Poland</option>
+  <option value="+51">🇵🇪 +51 Peru</option>
+  <option value="+52">🇲🇽 +52 Mexico</option>
+  <option value="+53">🇨🇱 +53 Chile</option>
+  <option value="+54">🇦🇷 +54 Argentina</option>
+  <option value="+55">🇧🇷 +55 Brazil</option>
+  <option value="+56">🇨🇱 +56 Chile</option>
+  <option value="+57">🇨🇴 +57 Colombia</option>
+  <option value="+58">🇻🇪 +58 Venezuela</option>
+  <option value="+380">🇺🇦 +380 Ukraine</option>
+  <option value="+381">🇷🇸 +381 Serbia</option>
+  <option value="+382">🇲🇪 +382 Montenegro</option>
+  <option value="+385">🇭🇷 +385 Croatia</option>
+  <option value="+386">🇸🇮 +386 Slovenia</option>
+  <option value="+387">🇧🇦 +387 Bosnia</option>
+  <option value="+389">🇲🇰 +389 Macedonia</option>
+  <option value="+420">🇨🇿 +420 Czech Rep</option>
+  <option value="+421">🇸🇰 +421 Slovakia</option>
+  <option value="+7">🇷🇺 +7 Russia/KZ</option>
+</optgroup>
+
+<optgroup label="🌎 Americas">
+  <option value="+54">🇦🇷 +54 Argentina</option>
+  <option value="+55">🇧🇷 +55 Brazil</option>
+  <option value="+56">🇨🇱 +56 Chile</option>
+  <option value="+57">🇨🇴 +57 Colombia</option>
+  <option value="+58">🇻🇪 +58 Venezuela</option>
+  <option value="+501">🇧🇿 +501 Belize</option>
+  <option value="+502">🇬🇹 +502 Guatemala</option>
+  <option value="+503">🇸🇻 +503 El Salvador</option>
+  <option value="+504">🇭🇳 +504 Honduras</option>
+  <option value="+505">🇳🇮 +505 Nicaragua</option>
+  <option value="+506">🇨🇷 +506 Costa Rica</option>
+  <option value="+507">🇵🇦 +507 Panama</option>
+  <option value="+591">🇧🇴 +591 Bolivia</option>
+  <option value="+592">🇬🇾 +592 Guyana</option>
+  <option value="+593">🇪🇨 +593 Ecuador</option>
+  <option value="+595">🇵🇾 +595 Paraguay</option>
+  <option value="+598">🇺🇾 +598 Uruguay</option>
+  <option value="+599">🇨🇼 +599 Curacao</option>
+  <option value="+500">🇫🇰 +500 Falkland Is</option>
+  <option value="+509">🇭🇹 +509 Haiti</option>
+  <option value="+590">🇬🇵 +590 Guadeloupe</option>
+  <option value="+594">🇬🇫 +594 French Guiana</option>
+  <option value="+596">🇷🇪 +596 Reunion</option>
+  <option value="+597">🇦🇼 +597 Aruba</option>
+</optgroup>
+
+<optgroup label="🌏 Oceania">
+  <option value="+64">🇳🇿 +64 New Zealand</option>
+  <option value="+63">🇵🇭 +63 Philippines</option>
+  <option value="+62">🇮🇩 +62 Indonesia</option>
+  <option value="+60">🇲🇾 +60 Malaysia</option>
+  <option value="+66">🇹🇭 +66 Thailand</option>
+  <option value="+84">🇻🇳 +84 Vietnam</option>
+  <option value="+65">🇸🇬 +65 Singapore</option>
+  <option value="+673">🇧🇳 +673 Brunei</option>
+  <option value="+674">🇳🇷 +674 Nauru</option>
+  <option value="+675">🇵🇬 +675 Papua NG</option>
+  <option value="+676">🇹🇴 +676 Tonga</option>
+  <option value="#677">🇸🇧 +677 Solomon Is</option>
+  <option value="+678">🇻🇺 +678 Vanuatu</option>
+  <option value="+679">🇫🇯 +679 Fiji</option>
+  <option value="+680">🇵🇼 +680 Palau</option>
+  <option value="+681">🇼🇫 +681 Wallis</option>
+  <option value="+682">🇨🇰 +682 Cook Is</option>
+  <option value="+683">🇳🇺 +683 Niue</option>
+  <option value="+685">🇼🇸 +685 Samoa</option>
+  <option value="+686">🇰🇮 +686 Kiribati</option>
+  <option value="+687">🇳🇨 +687 New Cal</option>
+  <option value="+688">🇹🇻 +688 Tuvalu</option>
+  <option value="+689">🇵🇫 +689 Polynesia</option>
+  <option value="+690">🇹🇰 +690 Tokelau</option>
+  <option value="+691">🇫🇲 +691 Micronesia</option>
+  <option value="+692">🇲🇭 +692 Marshall</option>
+  <option value="+670">🇲🇵 +670 N. Mariana</option>
+  <option value="+671">🇬🇺 +671 Guam</option>
+</optgroup>
+
+<optgroup label="🌐 Other">
+  <option value="+850">🇰🇵 +850 NKorea</option>
+  <option value="+852">🇭🇰 +852 Hong Kong</option>
+  <option value="+853">🇲🇴 +853 Macau</option>
+  <option value="+870">🇮🇳 +870 Inmarsat</option>
+  <option value="+878">🇺🇳 +878 Universal</option>
+  <option value="+881">🇪🇺 +881 Satellite</option>
+  <option value="+882">🇺🇳 +882 Intl Net</option>
+  <option value="+888">🇺🇳 +888 Shared</option>
+  <option value="+970">🇵🇸 +970 Palestine</option>
+  <option value="+979">🇮🇶 +979 IPRS</option>
+  <option value="+992">🇹🇯 +992 Tajikistan</option>
+  <option value="+993">🇹🇲 +993 Turkmenistan</option>
+  <option value="+994">🇦🇿 +994 Azerbaijan</option>
+  <option value="+995">🇬🇪 +995 Georgia</option>
+  <option value="+996">🇰🇬 +996 Kyrgyzstan</option>
+  <option value="+998">🇺🇿 +998 Uzbekistan</option>
+</optgroup>1</option>
+                  </select>
+                </div>
+                
+                <input 
+                  type="tel" 
+                  id="number" 
+                  placeholder="712345678"
+                  maxlength="15"
+                  autocomplete="tel"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  required
+                >
+                
+                <div class="input-validation">
+                  <i class="fas fa-check-circle valid-icon"></i>
+                  <i class="fas fa-exclamation-circle invalid-icon"></i>
+                </div>
+              </div>
+              
+              <p class="input-hint">
+                <i class="fas fa-info-circle"></i>
+                Example: 256712345678 (no spaces or dashes)
+              </p>
+            </div>
+
+            <!-- Advanced Options Toggle -->
+            <div class="advanced-options">
+              <button type="button" class="options-toggle" onclick="toggleOptions()">
+                <span>Advanced Options</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              
+              <div class="options-content" id="advancedContent">
+                <div class="option-item">
+                  <label class="toggle-label">
+                    <span>Save session to browser</span>
+                    <input type="checkbox" id="saveSession" checked>
+                    <span class="toggle-switch"></span>
+                  </label>
+                </div>
+                <div class="option-item">
+                  <label class="toggle-label">
+                    <span>Auto-copy code</span>
+                    <input type="checkbox" id="autoCopy">
+                    <span class="toggle-switch"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="generateBtn" class="generate-btn">
+              <span class="btn-text">
+                <i class="fas fa-magic"></i>
+                Generate Pairing Code
+              </span>
+              <span class="btn-loading">
+                <div class="spinner"></div>
+                Generating...
+              </span>
+            </button>
+          </form>
+
+          <!-- Result Container -->
+          <div id="result" class="result-container hidden">
+            <!-- Results will be injected here by JavaScript -->
+          </div>
+
+        </div>
+
+        <!-- Quick Info Cards -->
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Fast & Instant</h3>
+            <p>Generate pairing codes in under 10 seconds</p>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>100% Secure</h3>
+            <p>Your data is encrypted and never stored on servers</p>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>All Devices</h3>
+            <p>Works with Android, iOS, and Desktop WhatsApp</p>
+          </div>
+          
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-infinity"></i>
+            </div>
+            <h3>Unlimited Use</h3>
+            <p>No limits on how many codes you can generate</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS SECTION ========== -->
+    <section id="guide" class="guide-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-book-open"></i>
+            How to Link Your Device
+          </h2>
+          <p class="section-subtitle">Follow these simple steps to connect WhatsApp to MARIA BOT</p>
+        </div>
+
+        <div class="steps-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-icon">
+                <i class="fas fa-edit"></i>
+              </div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <h3>Step 1: Enter Your Number</h3>
+              <p>Type your phone number in the field above including country code (e.g., 256712345678)</p>
+              <div class="timeline-image">
+                <div class="mockup-phone">
+                  <div class="phone-screen">
+                    <div class="phone-input">256712345678</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-icon">
+                <i class="fas fa-key"></i>
+              </div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <h3>Step 2: Get Your Pairing Code</h3>
+              <p>Click "Generate Pairing Code" and wait a few seconds. You'll receive an 8-character code.</p>
+              <div class="code-preview">
+                <div class="preview-code">A B C D - E F G H</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <h3>Step 3: Open WhatsApp</h3>
+              <p>On your phone, open WhatsApp → Settings → Linked Devices → "Link a Device"</p>
+              <div class="whatsapp-steps">
+                <div class="wa-step">
+                  <i class="fas fa-ellipsis-v"></i>
+                  <span>Settings</span>
+                </div>
+                <i class="fas fa-arrow-right"></i>
+                <div class="wa-step">
+                  <i class="fas fa-laptop"></i>
+                  <span>Linked Devices</span>
+                </div>
+                <i class="fas fa-arrow-right"></i>
+                <div class="wa-step active">
+                  <i class="fas fa-plus"></i>
+                  <span>Link a Device</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-icon success">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h3>Step 4: Enter Code & Done!</h3>
+              <p>Type the pairing code when prompted. Your device is now linked! 🎉</p>
+              <div class="success-animation">
+                <div class="success-icon">✅</div>
+                <span>Successfully Connected!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES SECTION ========== -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-star"></i>
+            Powerful Features
+          </h2>
+          <p class="section-subtitle">Everything you need for seamless WhatsApp integration</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card featured">
+            <div class="feature-badge">Most Popular</div>
+            <div class="feature-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Lightning Fast</h3>
+            <p>Generate pairing codes in under 10 seconds with our optimized servers worldwide.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Average time: 5-8 seconds</li>
+              <li><i class="fas fa-check"></i> Global CDN network</li>
+              <li><i class="fas fa-check"></i> 99.9% uptime guarantee</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h3>Privacy First</h3>
+            <p>Your phone number and session data are never stored or shared with third parties.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> No data logging</li>
+              <li><i class="fas fa-check"></i> End-to-end encryption</li>
+              <li><i class="fas fa-check"></i> GDPR compliant</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h3>Auto-Reconnection</h3>
+            <p>Session data allows instant reconnection without scanning QR codes again.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Save session locally</li>
+              <li><i class="fas fa-check"></i> One-click reconnect</li>
+              <li><i class="fas fa-check"></i> Multiple sessions supported</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Developer Friendly</h3>
+            <p>Open-source code with full API documentation for custom integrations.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> REST API available</li>
+              <li><i class="fas fa-check"></i> Webhook support</li>
+              <li><i class="fas fa-check"></i> SDK for Node.js/Python</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Works Everywhere</h3>
+            <p>Compatible with all WhatsApp platforms: Android, iOS, Web, and Desktop.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Android 5.0+</li>
+              <li><i class="fas fa-check"></i> iOS 12.0+</li>
+              <li><i class="fas fa-check"></i> Windows/Mac/Linux</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Get help anytime through our community Discord, email, or documentation.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Live chat support</li>
+              <li><i class="fas fa-check"></i> Active community</li>
+              <li><i class="fas fa-check"></i> Video tutorials</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-question-circle"></i>
+            Frequently Asked Questions
+          </h2>
+          <p class="section-subtitle">Find answers to common questions about pairing codes</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What is a pairing code?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>A pairing code is an 8-character alphanumeric code that links your WhatsApp account to MARIA BOT without needing to scan QR codes. It's more secure and convenient than traditional QR code linking.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Is this safe to use?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Yes, absolutely safe!</strong> We use end-to-end encryption and never store your phone number or session data on our servers. The connection is established directly between your device and WhatsApp's servers.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>How long does the pairing code last?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Pairing codes typically expire after <strong>2 minutes</strong> of generation. If your code expires, simply generate a new one. There's no limit on how many codes you can generate.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I link multiple devices?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! WhatsApp allows you to link up to <strong>4 devices simultaneously</strong> (excluding your primary phone). Each device needs its own pairing code and session.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What if the code doesn't work?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>If the code doesn't work:</p>
+              <ol>
+                <li>Make sure you entered the correct phone number</li>
+                <li>Check that you're using the latest version of WhatsApp</li>
+                <li>Ensure your internet connection is stable</li>
+                <li>Generate a new code (they expire quickly!)</li>
+                <li>Contact support if issues persist</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do I need to pay for this service?</span>
+              <i class="fas fa-chevron-down"></i>
+button>
+            <div class="faq-answer">
+              <p><strong>No, this service is completely FREE!</strong> There are no hidden charges or premium features. We believe everyone should have access to secure WhatsApp automation tools.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What happens to my session data?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Session data is generated during pairing and displayed to you. You can save it locally for future reconnections. <strong>We do not store sessions on our servers</strong>. It's recommended to back up your session safely.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I use this for business accounts?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! This works with both personal and business WhatsApp accounts. However, please note that automated messaging should comply with WhatsApp's Terms of Service to avoid potential bans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATS SECTION ========== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="150000">1200</div>
+            <div class="stat-label">Codes Generated</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="45000">439</div>
+            <div class="stat-label">Active Users</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="99">457</div>
+            <div class="stat-label">% Uptime</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="24">5000</div>
+            <div class="stat-label">700/900 Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <i class="fas fa-users"></i>
+            What Users Say
+          </h2>
+          <p class="section-subtitle">Trusted by thousands of WhatsApp bot developers worldwide</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Incredible tool! Set up my WhatsApp bot in under 2 minutes. The pairing code feature is genius."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div class="author-info">
+                <strong>Alex Kim</strong>
+                <span>Bot Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Finally, no more struggling with QR codes! This makes deployment so much easier. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-info">
+                <strong>Sarah M.</strong>
+                <span>Full Stack Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-text">"Clean UI, fast generation, and excellent documentation. This is how developer tools should be made!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JD</div>
+              <div class="author-info">
+                <strong>James D.</strong>
+                <span>Tech Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Connect Your Bot?</h2>
+          <p>Generate your pairing code now and get started in seconds</p>
+          <a href="#generator" class="cta-btn">
+            <i class="fas fa-rocket"></i>
+            Start Now - It's Free
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span></span>
+            <span>MARIA MM BOT</span>
+          </div>
+          <p class="footer-description">
+            The most advanced WhatsApp bot framework with seamless pairing code generation.
+          </p>
+          <div class="social-links">
+            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#generator">Generate Code</a></li>
+            <li><a href="#guide">User Guide</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 MARIA BOT. All rights reserved.</p>
+        <p>Made with ❤️ by MarkMellon</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== TOAST NOTIFICATIONS ==================== -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- External JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
