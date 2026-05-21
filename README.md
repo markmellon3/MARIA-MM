@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:0a001a,60:00003a,100:00F5FF&height=280&section=header&text=⚡%20XYLO-MD%20⚡&fontSize=90&fontColor=00F5FF&fontAlignY=42&desc=Next-Generation%20WhatsApp%20Multi-Device%20Bot&descSize=18&descAlignY=62&descColor=ffffff&animation=twinkling&stroke=00F5FF&strokeWidth=3" width="100%">
+<img src="https://ik.imagekit.io/s95tumxuk/IMG_2360.jpeg /api?type=waving&color=0:000000,30:0a001a,60:00003a,100:00F5FF&height=280&section=header&text=⚡%20XYLO-MD%20⚡&fontSize=90&fontColor=00F5FF&fontAlignY=42&desc=Next-Generation%20WhatsApp%20Multi-Device%20Bot&descSize=18&descAlignY=62&descColor=ffffff&animation=twinkling&stroke=00F5FF&strokeWidth=3" width="100%">
 
 </div>
 
 <div align="center">
 
-<a href="https://cdn.davidxtech.de/cdn/image/xylo-readme.png">
-<img src="https://cdn.davidxtech.de/cdn/image/xylo-readme.png" width="140" height="140" style="border-radius:50%;border:3px solid #00F5FF;box-shadow:0 0 30px #00F5FF" alt="XYLO-MD Logo">
+<a href="https://ik.imagekit.io/s95tumxuk/IMG_2360.jpeg">
+<img src="https://ik.imagekit.io/s95tumxuk/IMG_2360.jpeg" width="140" height="140" style="border-radius:50%;border:3px solid #00F5FF;box-shadow:0 0 30px #00F5FF" alt="XYLO-MD Logo">
 </a>
 
 <br><br>
